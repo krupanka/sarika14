@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, FormControl, FormArray } from '@angular/forms';
 import{ Router,ActivatedRoute } from '@angular/router';
 import{ HttpResponse} from '@angular/common/http';
 import { PoEntryServicesService } from 'src/app/scrvices/crm/po/po-entry/po-entry-services.service';
-import { MatTableDataSource,MatSort,MatPaginator } from '@angular/material';
+
 
 
 
@@ -21,8 +21,7 @@ export class PoEntryRequesterSelectionComponent implements OnInit {
  
   constructor(private poEntryServicesService:PoEntryServicesService,
     private router:Router,private route:ActivatedRoute, private formBuilder: FormBuilder) { }
-    listData: MatTableDataSource<any>;
-    displayedColumns: string[] = ['product_title', 'description', 'model', 'brand'];
+  
     
 
     ngOnInit() {
